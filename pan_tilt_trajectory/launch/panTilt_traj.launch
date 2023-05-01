@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+  <rosparam command="load" file="$(find pan_tilt_trajectory)/config/trajsettings.yaml" />
+
+  <!--  <arg name="pub_urdf"  default="false"/>-->
+<!--  <arg name="port_name" default="/dev/pan_tilt"/>-->
+
+<!--  节点名 文件夹名（project名） 重命名-->
+  <node name="trajPubNode" pkg="pan_tilt_trajectory" type="trajPubNode" output="screen">
+<!--    <param name="init_yaw_"                value="60.0"/>-->
+<!--    <param name="init_pitch_"         value="-30.0"/>-->
+<!--    <param name="rotation_speed_"    value="5.0"/>-->
+<!--    <param name="pitch_gap_"  value="20.0"/>-->
+  </node>
+
+</launch> 

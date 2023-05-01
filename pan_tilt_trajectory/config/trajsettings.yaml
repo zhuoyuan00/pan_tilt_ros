@@ -1,0 +1,5 @@
+common:
+    init_yaw: 60.0
+    init_pitch: -25.0
+    rotation_speed: 6
+    pitch_gap: 25
