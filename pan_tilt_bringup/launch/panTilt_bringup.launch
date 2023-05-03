@@ -12,7 +12,8 @@
   </node>
 
   <group if="$(arg pub_urdf)">
-    <param name="robot_description" command="$(find xacro)/xacro.py $(find pan_tilt_description)/urdf/pan_tilt_st.urdf.xacro"/>
+    <!-- <param name="robot_description" command="$(find xacro)/xacro.py $(find pan_tilt_description)/urdf/pan_tilt_st.urdf.xacro"/> -->
+    <param name="robot_description" command="$(find xacro)/xacro $(find pan_tilt_description)/urdf/pan_tilt_st.urdf.xacro"/>
     <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
   </group>
 
