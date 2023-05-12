@@ -17,5 +17,5 @@
   </group>
 
   <arg name="rvizconfig" default="$(find pan_tilt_description)/rviz/view_model.rviz"/>
-  <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" required="false"/>
+  <!-- <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" required="true"/> -->
 </launch> 
